@@ -1,0 +1,10 @@
+digraph minDFA {
+    rankdir=LR;
+    node [shape=circle];
+    0 [shape=doublecircle];
+    0 [shape=doublecircle];
+    0 -> 1[label="letter"];
+    0 [shape=doublecircle];
+    1 [shape=doublecircle];
+    0 -> 1[label="digit"];
+}

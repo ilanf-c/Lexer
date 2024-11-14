@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+string Tokens[]={ "letter" , "digit" };
+int DFA[6][2]={{1,2,},{-1,-1,},{-1,-1,},};
+int main()
+{
+	int i = 0, strt = 0, isMatch = 0;
+	string sta;
+	getline(cin, sta);
+	while (sta[i] != '\0')
+	{
+		for (int j = 0; j < Token.size(); j++)
+		{
+			int lenOfToken = Tokens[j].length();
+			if (lenOfToken + i <= sta.length() && sta.substr(i, lenOfToken) == Tokens[i])
+			{
+				if (strt != -1)
+				{
+					strt = DFA[strt][j];
+					isMatch = 1;
+				}
+			}
+		}
+		if (isMatch)
+		{
+			cout << "NO" << endl;
+			return -1;
+		}
+		i++;
+	}
+	cout << "YES" << endl;
+	return 0;
+}
